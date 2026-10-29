@@ -1,0 +1,25 @@
+clc;
+clear;
+close;
+% arithmatic operations
+a=10; b=5;
+disp("addition="+string(a+b));
+disp("subtraction="+string(a-b));
+disp("multiplication="+string(a*b));
+disp("division="+string(a/b));
+t=0:0.001:2*3.14;
+x=sin(t);
+subplot(2,2,1);
+plot(t,x);
+xlabel("time");
+ylabel("amplitude");
+title("sinewave");
+y=sin(5*t);
+subplot(2,2,2);
+plot(t,y);
+y1=2*sin(t);
+subplot(2,2,3);
+plot(t,y1);
+y2=2*sin(2*t);
+subplot(2,2,4);
+plot(t,y2);
